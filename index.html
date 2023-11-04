@@ -8,39 +8,49 @@
 
     <style>
         body {
-            /* background-image: url("./images/bg.png"); */
-            /* background-position: center; */
-            /* background-size: cover; */
-            /* background-repeat: no-repeat;  */
-
-            overflow-y: hidden ! important;
-            overflow-x: hidden ! important;
+            overflow-y: hidden !important;
+            overflow-x: hidden !important;
             background-color: #f8f8f8;
             background-image: url('./images/mbb-front-page.jpg');
             background-size: cover;
-            /* background-size: contain; */
             background-repeat: no-repeat;
-            /* background-position: right; */
+            margin: 0; /* Remove default margin to ensure full width */
+        }
 
+        /* Adjust other styles based on percentage or relative units */
+        /* For example, if you have a container, set its width in percentage */
+        .container {
+            width: 80%; /* Adjust as needed */
+            margin: 0 auto; /* Center the container */
+        }
+
+        /* Use media queries for specific device breakpoints */
+        @media (max-width: 768px) {
+            /* Styles for devices with a maximum width of 768px (e.g., tablets) */
+            .container {
+                width: 90%; /* Adjust as needed for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Styles for devices with a maximum width of 480px (e.g., mobile phones) */
+            .container {
+                width: 95%; /* Adjust as needed for even smaller screens */
+            }
         }
     </style>
 
-    <!-- <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-    <script src="https://mediafiles.botpress.cloud/9ba5a070-f259-4e98-a7c6-8e13dff26e19/webchat/config.js"
-        defer></script> -->
-    <!-- <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-    <script src="https://mediafiles.botpress.cloud/f12931ce-c441-4244-83fe-fce286d838bb/webchat/config.js"
-        defer></script> -->
-
-
-    <!-- <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
     <script src="https://mediafiles.botpress.cloud/a81c164f-fdab-457c-bf9f-6a25301c1baa/webchat/config.js"
-        defer></script> -->
-
-        <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-        <script src="https://mediafiles.botpress.cloud/9ba5a070-f259-4e98-a7c6-8e13dff26e19/webchat/config.js" defer></script>
-
+        defer></script>
+    
 </head>
 
+<body>
+    <!-- Your content goes here, wrapped in the responsive container if needed -->
+    <div class="container">
+        <!-- Your content -->
+    </div>
+</body>
 
 </html>
